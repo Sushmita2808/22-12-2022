@@ -65,14 +65,14 @@ public class ProductController {
 	    	
 	    //Sort the Product Price
 	    @GetMapping("/sortbyprice")
-	    public List<Product> getsortedByPrice(@RequestBody Product productdetails) throws ProductNotFoundException {
+	    public List<Product> getsortedByPrice(@RequestBody Product productdetails)  {
 	        return productRepository.SortedByPrice();
 	             
 	    }
 	    
 	    //Sort the Product List
 	    @GetMapping("/sortbyname")
-	    public List<Product> getSortedByName(@RequestBody Product productdetails) throws ProductNotFoundException {
+	    public List<Product> getSortedByName(@RequestBody Product productdetails)  {
 	        return productRepository.SortedByName();
 	             
 	    }
